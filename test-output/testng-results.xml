@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="19455" started-at="2019-10-15T07:39:15Z" finished-at="2019-10-15T07:39:35Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="19455" started-at="2019-10-15T07:39:15Z" finished-at="2019-10-15T07:39:35Z">
+      <class name="AppMixProject.LaunchBrowser">
+        <test-method status="PASS" signature="setup()[pri:0, instance:AppMixProject.LaunchBrowser@1d057a39]" name="setup" is-config="true" duration-ms="17121" started-at="2019-10-15T07:39:16Z" finished-at="2019-10-15T07:39:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="login()[pri:0, instance:AppMixProject.LaunchBrowser@1d057a39]" name="login" duration-ms="2219" started-at="2019-10-15T07:39:33Z" finished-at="2019-10-15T07:39:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- AppMixProject.LaunchBrowser -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
