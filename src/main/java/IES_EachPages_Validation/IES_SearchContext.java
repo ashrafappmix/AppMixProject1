@@ -1,17 +1,8 @@
 package IES_EachPages_Validation;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.DataFormatter;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -23,28 +14,14 @@ import org.testng.annotations.Test;
 import com.qa.mainpackage.BaseClass;
 
 public class IES_SearchContext extends BaseClass {
-	public FileInputStream fs;
-	public XSSFWorkbook wbo;
-	public XSSFSheet wso;
-	public FileOutputStream fo;
-	public Row r;
-	DataFormatter formatter;
+
+	public IES_SearchContext() {
+		super(1);
+	}
 
 	@BeforeMethod
 	public void setup() {
-		try {
-			fs = new FileInputStream(
-					"C:\\Users\\Ashraf\\eclipse-workspace\\AppMixProject\\src\\main\\java\\com\\qa\\data\\SearchData.xlsx");
-		} catch (FileNotFoundException e1) {
-			e1.printStackTrace();
-		}
-		try {
-			wbo = new XSSFWorkbook(fs);
-		} catch (IOException e1) {
-			e1.printStackTrace();
-		}
-		wso = wbo.getSheet("Sheet1");
-		formatter = new DataFormatter();
+
 		initialization();
 	}
 
@@ -85,7 +62,7 @@ public class IES_SearchContext extends BaseClass {
 
 		rowc = wso.getLastRowNum();
 
-		for (int i = 0; i <rowc; i++) {
+		for (int i = 0; i < rowc; i++) {
 			try {
 				if (i == 0) {
 
@@ -100,52 +77,52 @@ public class IES_SearchContext extends BaseClass {
 					radioButton_list.get(j).click();
 
 					switch (j) {
-//					case 0:
-//
-//						driver.findElement(By.id("ContentPlaceHolder1_txtSearch")).sendKeys(value_Content);
-//						Thread.sleep(2000);
-//						List<WebElement> first_list = driver.findElements(
-//								By.xpath("//ul[@id='ui-id-1']//li/descendant::div[@class='ui-menu-item-wrapper']"));
-//						System.out.println(first_list.size());
-//						if (first_list.size() != 0) {
-//							for (int k = 0; k < first_list.size(); k++) {
-//								String firstName = first_list.get(k).getText();
-//								if (firstName.contains("Ashraf Test")) {
-//									first_list.get(k).click();
-//									break;
-//								}
-//
-//							}
-//						}else if(first_list.size()==0) {
-//	
-//							driver.findElement(By.id("ContentPlaceHolder1_txtSearch")).sendKeys(Keys.ENTER);
-//						}
-//						driver.findElement(By.id("ContentPlaceHolder1_ucNavigation1_imgSearch")).click();
-//						driver.findElement(By.id("ContentPlaceHolder1_txtSearch")).clear();
-//						break;
-//
-//					case 1:
-//						driver.findElement(By.id("ContentPlaceHolder1_txtSearch")).sendKeys(value_Content);
-//						Thread.sleep(2000);
-//						List<WebElement> lastName_list = driver.findElements(
-//								By.xpath("//ul[@id='ui-id-1']//li/descendant::div[@class='ui-menu-item-wrapper']"));
-//						if (lastName_list.size() != 0) {
-//							for (int m = 0; m < lastName_list.size(); m++) {
-//								String last_name = lastName_list.get(m).getText();
-//								System.out.println(last_name);
-//								if (last_name.contains("Ashraf Test")) {
-//									lastName_list.get(m).click();
-//									break;
-//								}
-//
-//							}
-//						}else if(lastName_list.size()==0) {
-//							
-//							driver.findElement(By.id("ContentPlaceHolder1_txtSearch")).sendKeys(Keys.ENTER);
-//						}
-//						driver.findElement(By.id("ContentPlaceHolder1_ucNavigation1_imgSearch")).click();
-//						driver.findElement(By.id("ContentPlaceHolder1_txtSearch")).clear();
-//						break;
+					case 0:
+
+						driver.findElement(By.id("ContentPlaceHolder1_txtSearch")).sendKeys(value_Content);
+						Thread.sleep(2000);
+						List<WebElement> first_list = driver.findElements(
+								By.xpath("//ul[@id='ui-id-1']//li/descendant::div[@class='ui-menu-item-wrapper']"));
+						System.out.println(first_list.size());
+						if (first_list.size() != 0) {
+							for (int k = 0; k < first_list.size(); k++) {
+								String firstName = first_list.get(k).getText();
+								if (firstName.contains("Ashraf Test")) {
+									first_list.get(k).click();
+									break;
+								}
+
+							}
+						} else if (first_list.size() == 0) {
+
+							driver.findElement(By.id("ContentPlaceHolder1_txtSearch")).sendKeys(Keys.ENTER);
+						}
+						driver.findElement(By.id("ContentPlaceHolder1_ucNavigation1_imgSearch")).click();
+						driver.findElement(By.id("ContentPlaceHolder1_txtSearch")).clear();
+						break;
+
+					case 1:
+						driver.findElement(By.id("ContentPlaceHolder1_txtSearch")).sendKeys(value_Content);
+						Thread.sleep(2000);
+						List<WebElement> lastName_list = driver.findElements(
+								By.xpath("//ul[@id='ui-id-1']//li/descendant::div[@class='ui-menu-item-wrapper']"));
+						if (lastName_list.size() != 0) {
+							for (int m = 0; m < lastName_list.size(); m++) {
+								String last_name = lastName_list.get(m).getText();
+								System.out.println(last_name);
+								if (last_name.contains("Ashraf Test")) {
+									lastName_list.get(m).click();
+									break;
+								}
+
+							}
+						} else if (lastName_list.size() == 0) {
+
+							driver.findElement(By.id("ContentPlaceHolder1_txtSearch")).sendKeys(Keys.ENTER);
+						}
+						driver.findElement(By.id("ContentPlaceHolder1_ucNavigation1_imgSearch")).click();
+						driver.findElement(By.id("ContentPlaceHolder1_txtSearch")).clear();
+						break;
 
 					case 2:
 						driver.findElement(By.id("ContentPlaceHolder1_txtSearch")).sendKeys(value_Content);
@@ -157,8 +134,8 @@ public class IES_SearchContext extends BaseClass {
 							for (int n = 0; n < SSN_list.size(); n++) {
 								radioButton_list = driver.findElements(By.xpath(
 										"//div[@class='col-sm-8']//div[@class='form-group']//span/descendant::input[@type='radio']"));
-								SSN_list = driver.findElements(
-										By.xpath("//ul[@id='ui-id-1']//li/descendant::div[@class='ui-menu-item-wrapper']"));
+								SSN_list = driver.findElements(By.xpath(
+										"//ul[@id='ui-id-1']//li/descendant::div[@class='ui-menu-item-wrapper']"));
 								System.out.println(SSN_list.size());
 								String SSN_name = SSN_list.get(n).getText();
 								System.out.println(SSN_name);
@@ -168,36 +145,36 @@ public class IES_SearchContext extends BaseClass {
 									break;
 								}
 							}
-						}else if(SSN_list.size()==0) {
-							
+						} else if (SSN_list.size() == 0) {
+
 							driver.findElement(By.id("ContentPlaceHolder1_txtSearch")).sendKeys(Keys.ENTER);
 						}
 						driver.findElement(By.id("ContentPlaceHolder1_ucNavigation1_imgSearch")).click();
 						driver.findElement(By.id("ContentPlaceHolder1_txtSearch")).clear();
 						break;
 
-//					case 3:
-//						driver.findElement(By.id("ContentPlaceHolder1_txtSearch")).sendKeys(value_Content);
-//						Thread.sleep(2000);
-//						List<WebElement> EmployeeNumber_list = driver.findElements(
-//								By.xpath("//ul[@id='ui-id-1']//li/descendant::div[@class='ui-menu-item-wrapper']"));
-//						if (EmployeeNumber_list.size() != 0) {
-//							for (int e = 0; e < EmployeeNumber_list.size(); e++) {
-//								String EmployeeNumber_name = EmployeeNumber_list.get(e).getText();
-//								System.out.println(EmployeeNumber_name);
-//								if (EmployeeNumber_name.contains("Ashraf Test")) {
-//									EmployeeNumber_list.get(e).click();
-//									break;
-//								}
-//
-//							}
-//						}else if(EmployeeNumber_list.size()==0) {
-//			
-//							driver.findElement(By.id("ContentPlaceHolder1_txtSearch")).sendKeys(Keys.ENTER);
-//						}
-//						driver.findElement(By.id("ContentPlaceHolder1_ucNavigation1_imgSearch")).click();
-//						driver.findElement(By.id("ContentPlaceHolder1_txtSearch")).clear();
-//						break;
+					case 3:
+						driver.findElement(By.id("ContentPlaceHolder1_txtSearch")).sendKeys(value_Content);
+						Thread.sleep(2000);
+						List<WebElement> EmployeeNumber_list = driver.findElements(
+								By.xpath("//ul[@id='ui-id-1']//li/descendant::div[@class='ui-menu-item-wrapper']"));
+						if (EmployeeNumber_list.size() != 0) {
+							for (int e = 0; e < EmployeeNumber_list.size(); e++) {
+								String EmployeeNumber_name = EmployeeNumber_list.get(e).getText();
+								System.out.println(EmployeeNumber_name);
+								if (EmployeeNumber_name.contains("Ashraf Test")) {
+									EmployeeNumber_list.get(e).click();
+									break;
+								}
+
+							}
+						} else if (EmployeeNumber_list.size() == 0) {
+
+							driver.findElement(By.id("ContentPlaceHolder1_txtSearch")).sendKeys(Keys.ENTER);
+						}
+						driver.findElement(By.id("ContentPlaceHolder1_ucNavigation1_imgSearch")).click();
+						driver.findElement(By.id("ContentPlaceHolder1_txtSearch")).clear();
+						break;
 
 					}
 				}

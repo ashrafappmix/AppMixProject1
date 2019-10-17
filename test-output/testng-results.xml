@@ -1,58 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="120644" started-at="2019-10-17T12:58:44Z" finished-at="2019-10-17T13:00:44Z">
+  <suite name="Default suite" duration-ms="377145" started-at="2019-10-17T13:18:19Z" finished-at="2019-10-17T13:24:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="120644" started-at="2019-10-17T12:58:44Z" finished-at="2019-10-17T13:00:44Z">
+    <test name="Default test" duration-ms="377145" started-at="2019-10-17T13:18:19Z" finished-at="2019-10-17T13:24:36Z">
       <class name="IES_EachPages_Validation.IES_SearchContext">
-        <test-method status="PASS" signature="setup()[pri:0, instance:IES_EachPages_Validation.IES_SearchContext@16ec5519]" name="setup" is-config="true" duration-ms="27339" started-at="2019-10-17T12:58:44Z" finished-at="2019-10-17T12:59:11Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:IES_EachPages_Validation.IES_SearchContext@5119fb47]" name="setup" is-config="true" duration-ms="9054" started-at="2019-10-17T13:18:19Z" finished-at="2019-10-17T13:18:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="Search_Result()[pri:0, instance:IES_EachPages_Validation.IES_SearchContext@16ec5519]" name="Search_Result" duration-ms="89719" started-at="2019-10-17T12:59:11Z" finished-at="2019-10-17T13:00:41Z">
-          <exception class="java.lang.IndexOutOfBoundsException">
-            <message>
-              <![CDATA[Index: 1, Size: 0]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IndexOutOfBoundsException: Index: 1, Size: 0
-at java.util.ArrayList.rangeCheck(Unknown Source)
-at java.util.ArrayList.get(Unknown Source)
-at IES_EachPages_Validation.IES_SearchContext.Search_Result(IES_SearchContext.java:163)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+        <test-method status="PASS" signature="Search_Result()[pri:0, instance:IES_EachPages_Validation.IES_SearchContext@5119fb47]" name="Search_Result" duration-ms="364415" started-at="2019-10-17T13:18:28Z" finished-at="2019-10-17T13:24:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Search_Result -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:IES_EachPages_Validation.IES_SearchContext@16ec5519]" name="teardown" is-config="true" duration-ms="3534" started-at="2019-10-17T13:00:41Z" finished-at="2019-10-17T13:00:44Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:IES_EachPages_Validation.IES_SearchContext@5119fb47]" name="teardown" is-config="true" duration-ms="3638" started-at="2019-10-17T13:24:32Z" finished-at="2019-10-17T13:24:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
