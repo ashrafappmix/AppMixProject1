@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="AppMixProject.LaunchBrowser">
+      <class name="AppMixProject.IES_SearchContext">
         <methods>
+          <include name="Search_Result"/>
+          <include name="teardown"/>
           <include name="setup"/>
-          <include name="login"/>
         </methods>
-      </class> <!-- AppMixProject.LaunchBrowser -->
+      </class> <!-- AppMixProject.IES_SearchContext -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
