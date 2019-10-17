@@ -1,4 +1,4 @@
-package AppMixProject;
+package IES_EachPages_Validation;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -11,9 +11,9 @@ import org.testng.annotations.Test;
 
 import com.qa.mainpackage.BaseClass;
 
-public class Login extends BaseClass {
+public class IES_Login extends BaseClass {
 
-	public Login()throws IOException {
+	public IES_Login()throws IOException {
 		super();
 	}
 

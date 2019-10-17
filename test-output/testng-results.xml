@@ -2,54 +2,25 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="46871" started-at="2019-10-16T15:21:04Z" finished-at="2019-10-16T15:21:51Z">
+  <suite name="Default suite" duration-ms="120644" started-at="2019-10-17T12:58:44Z" finished-at="2019-10-17T13:00:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="46871" started-at="2019-10-16T15:21:04Z" finished-at="2019-10-16T15:21:51Z">
-      <class name="AppMixProject.IES_SearchContext">
-        <test-method status="PASS" signature="setup()[pri:0, instance:AppMixProject.IES_SearchContext@16ec5519]" name="setup" is-config="true" duration-ms="9854" started-at="2019-10-16T15:21:04Z" finished-at="2019-10-16T15:21:14Z">
+    <test name="Default test" duration-ms="120644" started-at="2019-10-17T12:58:44Z" finished-at="2019-10-17T13:00:44Z">
+      <class name="IES_EachPages_Validation.IES_SearchContext">
+        <test-method status="PASS" signature="setup()[pri:0, instance:IES_EachPages_Validation.IES_SearchContext@16ec5519]" name="setup" is-config="true" duration-ms="27339" started-at="2019-10-17T12:58:44Z" finished-at="2019-10-17T12:59:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="Search_Result()[pri:0, instance:AppMixProject.IES_SearchContext@16ec5519]" name="Search_Result" duration-ms="33085" started-at="2019-10-16T15:21:14Z" finished-at="2019-10-16T15:21:47Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="Search_Result()[pri:0, instance:IES_EachPages_Validation.IES_SearchContext@16ec5519]" name="Search_Result" duration-ms="89719" started-at="2019-10-17T12:59:11Z" finished-at="2019-10-17T13:00:41Z">
+          <exception class="java.lang.IndexOutOfBoundsException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"label"}
-  (Session info: chrome=77.0.3865.120)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'APPMIX-44', ip: '192.168.1.144', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\Ashraf\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58953}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0debe18f8c055d73e219b21daa3350f3
-*** Element info: {Using=tag name, value=label}]]>
+              <![CDATA[Index: 1, Size: 0]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"label"}
-  (Session info: chrome=77.0.3865.120)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'APPMIX-44', ip: '192.168.1.144', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\Ashraf\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58953}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0debe18f8c055d73e219b21daa3350f3
-*** Element info: {Using=tag name, value=label}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:185)
-at org.openqa.selenium.remote.RemoteWebElement.findElementByTagName(RemoteWebElement.java:277)
-at org.openqa.selenium.By$ByTagName.findElement(By.java:320)
-at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:181)
-at AppMixProject.IES_SearchContext.Search_Result(IES_SearchContext.java:59)
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index: 1, Size: 0
+at java.util.ArrayList.rangeCheck(Unknown Source)
+at java.util.ArrayList.get(Unknown Source)
+at IES_EachPages_Validation.IES_SearchContext.Search_Result(IES_SearchContext.java:163)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -77,15 +48,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Search_Result -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:AppMixProject.IES_SearchContext@16ec5519]" name="teardown" is-config="true" duration-ms="3879" started-at="2019-10-16T15:21:47Z" finished-at="2019-10-16T15:21:51Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:IES_EachPages_Validation.IES_SearchContext@16ec5519]" name="teardown" is-config="true" duration-ms="3534" started-at="2019-10-17T13:00:41Z" finished-at="2019-10-17T13:00:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- AppMixProject.IES_SearchContext -->
+      </class> <!-- IES_EachPages_Validation.IES_SearchContext -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

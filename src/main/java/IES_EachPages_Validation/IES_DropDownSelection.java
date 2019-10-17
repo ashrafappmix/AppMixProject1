@@ -1,4 +1,4 @@
-package AppMixProject;
+package IES_EachPages_Validation;
 
 import java.util.List;
 
@@ -33,7 +33,6 @@ public class IES_DropDownSelection extends BaseClass {
 			List<WebElement> Case_list = Case_dropdown.getOptions();
 			int Case_size = Case_list.size();
 			System.out.println(Case_size);
-
 			for (int i = 0; i < Case_size; i++) {
 				Case_dropdown = new Select(driver.findElement(By.xpath("//select[@id='ddlCase']")));
 				Case_list = Case_dropdown.getOptions();
