@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="AppMix Project"  > 
+
+<listeners>
+<listener class-name="Analyzer.MyTransformer"/>
+<listener class-name="com.qa.ExtentReport.ExtentReportListener"/>
+</listeners>
+
+             <test name="IES Validation of respective pages">
+                     <classes>
+                       <!-- packagename.Testcase class name  -->
+                            <!--  <class name ="com.qa.IES_EachPages_Validation.IES_Login" ></class>
+                             <class name ="com.qa.IES_EachPages_Validation.IES_DropDownSelection" ></class> -->
+                               <class name ="com.qa.IES_EachPages_Validation.IES_SearchContext" ></class>
+                             
+                     </classes>
+             </test>
+</suite>

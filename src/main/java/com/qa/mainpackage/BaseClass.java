@@ -10,6 +10,7 @@ import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -22,7 +23,8 @@ public class BaseClass {
 	public XSSFSheet wso;
 	public FileOutputStream fo;
 	public Row r;
-	public DataFormatter formatter;
+	public static DataFormatter formatter;
+	public static  JavascriptExecutor jse;
 
 	public BaseClass() {
 		try {
@@ -63,6 +65,7 @@ public class BaseClass {
 		coptions.addArguments("--disable-notifications");
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Ashraf\\Downloads\\chromedriver.exe");
 		driver = new ChromeDriver(coptions);
+		jse = (JavascriptExecutor)driver;
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.get("https://web-dev.ieswebservices.com");

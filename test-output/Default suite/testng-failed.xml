@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="IES_EachPages_Validation.IES_SearchContext">
+      <class name="com.qa.IES_EachPages_Validation.IES_AddEnrollee">
         <methods>
-          <include name="Search_Result"/>
-          <include name="teardown"/>
+          <include name="Enrolle_Addition"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- IES_EachPages_Validation.IES_SearchContext -->
+      </class> <!-- com.qa.IES_EachPages_Validation.IES_AddEnrollee -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

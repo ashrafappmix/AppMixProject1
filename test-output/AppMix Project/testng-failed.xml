@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [AppMix Project]">
+  <test thread-count="5" name="IES Validation of respective pages(failed)">
+    <classes>
+      <class name="com.qa.IES_EachPages_Validation.IES_DropDownSelection">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="Select_Multi_dropdown"/>
+        </methods>
+      </class> <!-- com.qa.IES_EachPages_Validation.IES_DropDownSelection -->
+      <class name="com.qa.IES_EachPages_Validation.IES_SearchContext">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="Search_Result"/>
+        </methods>
+      </class> <!-- com.qa.IES_EachPages_Validation.IES_SearchContext -->
+    </classes>
+  </test> <!-- IES Validation of respective pages(failed) -->
+</suite> <!-- Failed suite [AppMix Project] -->

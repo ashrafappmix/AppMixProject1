@@ -1,4 +1,4 @@
-package IES_EachPages_Validation;
+package com.qa.IES_EachPages_Validation;
 
 import java.util.List;
 
