@@ -67,26 +67,9 @@ public class IES_AddEnrollee extends BaseClass {
 		Thread.sleep(2000);
 		driver.findElement(By.id("ContentPlaceHolder1_btnAdd")).click();
 		try {
-	driver.findElement(By.id("ContentPlaceHolder1_txtFirstName")).sendKeys(First_Name);
-//		driver.findElement(By.id("ContentPlaceHolder1_txtMI")).sendKeys(Middle_Name);
-//		driver.findElement(By.id("ContentPlaceHolder1_txtLastName")).sendKeys(Last_Name);
-//		driver.findElement(By.id("ContentPlaceHolder1_txtAddress")).sendKeys(Address);
-//		driver.findElement(By.id("ContentPlaceHolder1_txtAddress2")).sendKeys(Address2);
-//		driver.findElement(By.id("ContentPlaceHolder1_txtCity")).sendKeys(City);
-//		driver.findElement(By.id("ContentPlaceHolder1_txtZipCode")).sendKeys(Zip_Code);
-//		SSN_Web = driver.findElement(By.id("ContentPlaceHolder1_txtSSN"));
-//		jse.executeScript("arguments[0].value='" + SSN + "';", SSN_Web);
-//		DOB = driver.findElement(By.id("ContentPlaceHolder1_txtMDOB"));
-//		jse.executeScript("arguments[0].value=' " + Date_of_Birth + " ';", DOB);
-//		driver.findElement(By.id("ContentPlaceHolder1_txtCellPhone")).sendKeys(Cell_Phone);
-//		driver.findElement(By.id("ContentPlaceHolder1_txtEmail")).sendKeys(Email);
-//		driver.findElement(By.id("ContentPlaceHolder1_txtWieght")).sendKeys(Weight);
-//		driver.findElement(By.id("ContentPlaceHolder1_txtMemberId")).sendKeys(Employee_Id);
-//		driver.findElement(By.id("ContentPlaceHolder1_txtOccupation")).sendKeys(Occupation);
-//		driver.findElement(By.id("ContentPlaceHolder1_txtAnnualCompensation")).sendKeys(Annual_Salary);
-//		driver.findElement(By.id("ContentPlaceHolder1_txtDepartmentNumber")).sendKeys(Business_Unit_Department_Number);
-		}catch(org.openqa.selenium.StaleElementReferenceException ex) {
+			driver.findElement(By.id("ContentPlaceHolder1_txtFirstName")).sendKeys(First_Name);
 
+		} catch (org.openqa.selenium.StaleElementReferenceException ex) {
 			driver.findElement(By.id("ContentPlaceHolder1_txtFirstName")).sendKeys(First_Name);
 			driver.findElement(By.id("ContentPlaceHolder1_txtMI")).sendKeys(Middle_Name);
 			driver.findElement(By.id("ContentPlaceHolder1_txtLastName")).sendKeys(Last_Name);
@@ -104,9 +87,9 @@ public class IES_AddEnrollee extends BaseClass {
 			driver.findElement(By.id("ContentPlaceHolder1_txtMemberId")).sendKeys(Employee_Id);
 			driver.findElement(By.id("ContentPlaceHolder1_txtOccupation")).sendKeys(Occupation);
 			driver.findElement(By.id("ContentPlaceHolder1_txtAnnualCompensation")).sendKeys(Annual_Salary);
-			driver.findElement(By.id("ContentPlaceHolder1_txtDepartmentNumber")).sendKeys(Business_Unit_Department_Number);
-				
-			
+			driver.findElement(By.id("ContentPlaceHolder1_txtDepartmentNumber"))
+					.sendKeys(Business_Unit_Department_Number);
+
 		}
 	}
 

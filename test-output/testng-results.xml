@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="40132" started-at="2019-10-18T15:14:57Z" finished-at="2019-10-18T15:15:37Z">
+  <suite name="Default suite" duration-ms="24258" started-at="2019-10-21T07:57:48Z" finished-at="2019-10-21T07:58:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="40132" started-at="2019-10-18T15:14:57Z" finished-at="2019-10-18T15:15:37Z">
+    <test name="Default test" duration-ms="24258" started-at="2019-10-21T07:57:48Z" finished-at="2019-10-21T07:58:13Z">
       <class name="com.qa.IES_EachPages_Validation.IES_AddEnrollee">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.IES_EachPages_Validation.IES_AddEnrollee@1afd44cb]" name="setup" is-config="true" duration-ms="22303" started-at="2019-10-18T15:14:57Z" finished-at="2019-10-18T15:15:19Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.IES_EachPages_Validation.IES_AddEnrollee@1afd44cb]" name="setup" is-config="true" duration-ms="10736" started-at="2019-10-21T07:57:49Z" finished-at="2019-10-21T07:57:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="Enrolle_Addition(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.IES_EachPages_Validation.IES_AddEnrollee@1afd44cb]" name="Enrolle_Addition" duration-ms="17606" started-at="2019-10-18T15:15:19Z" data-provider="getEnrolleeTestData" finished-at="2019-10-18T15:15:37Z">
+        <test-method status="PASS" signature="Enrolle_Addition(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.IES_EachPages_Validation.IES_AddEnrollee@1afd44cb]" name="Enrolle_Addition" duration-ms="13198" started-at="2019-10-21T07:57:59Z" data-provider="getEnrolleeTestData" finished-at="2019-10-21T07:58:13Z">
           <params>
             <param index="0">
               <value>
@@ -45,7 +45,7 @@
             </param>
             <param index="6">
               <value>
-                <![CDATA[23423.0]]>
+                <![CDATA[23423]]>
               </value>
             </param>
             <param index="7">
@@ -55,12 +55,12 @@
             </param>
             <param index="8">
               <value>
-                <![CDATA[17-Dec-1992]]>
+                <![CDATA[33955]]>
               </value>
             </param>
             <param index="9">
               <value>
-                <![CDATA[2.132132121E9]]>
+                <![CDATA[2132132121]]>
               </value>
             </param>
             <param index="10">
@@ -70,12 +70,12 @@
             </param>
             <param index="11">
               <value>
-                <![CDATA[67.0]]>
+                <![CDATA[67]]>
               </value>
             </param>
             <param index="12">
               <value>
-                <![CDATA[2.34233213E8]]>
+                <![CDATA[234233213]]>
               </value>
             </param>
             <param index="13">
@@ -85,12 +85,12 @@
             </param>
             <param index="14">
               <value>
-                <![CDATA[600000.0]]>
+                <![CDATA[600000]]>
               </value>
             </param>
             <param index="15">
               <value>
-                <![CDATA[1223.0]]>
+                <![CDATA[1223]]>
               </value>
             </param>
           </params>

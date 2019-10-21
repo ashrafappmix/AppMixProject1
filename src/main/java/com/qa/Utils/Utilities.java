@@ -5,9 +5,12 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.apache.poi.xssf.usermodel.XSSFCell;
 
 import com.qa.mainpackage.BaseClass;
 
@@ -56,9 +59,18 @@ public class Utilities extends BaseClass {
 		// sheet.getRow(0).getLastCellNum());
 
 		for (int i = 0; i < sheet.getLastRowNum(); i++) {
+			Row row = sheet.getRow(i + 1);
 			for (int k = 0; k < sheet.getRow(0).getLastCellNum(); k++) {
-
-				data[i][k] = sheet.getRow(i + 1).getCell(k).toString();
+				Cell cell = row.getCell(k);
+				String value;
+				try {
+					value= cell.getRichStringCellValue().toString();
+				} catch (Exception e) {
+					value=((XSSFCell)cell).getRawValue();
+				}
+			
+				data[i][k]=value;
+				//data[i][k] = sheet.getRow(i + 1).getCell(k).toString();
 
 				// System.out.println(data[i][k]);
 
