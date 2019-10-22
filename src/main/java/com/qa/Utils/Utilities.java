@@ -64,13 +64,13 @@ public class Utilities extends BaseClass {
 				Cell cell = row.getCell(k);
 				String value;
 				try {
-					value= cell.getRichStringCellValue().toString();
+					value = cell.getRichStringCellValue().toString();
 				} catch (Exception e) {
-					value=((XSSFCell)cell).getRawValue();
+					value = ((XSSFCell) cell).getRawValue();
 				}
-			
-				data[i][k]=value;
-				//data[i][k] = sheet.getRow(i + 1).getCell(k).toString();
+
+				data[i][k] = value;
+				// data[i][k] = sheet.getRow(i + 1).getCell(k).toString();
 
 				// System.out.println(data[i][k]);
 

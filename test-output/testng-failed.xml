@@ -5,7 +5,7 @@
     <classes>
       <class name="com.qa.IES_EachPages_Validation.IES_AddEnrollee">
         <methods>
-          <include name="Enrolle_Addition"/>
+          <include name="Enrolle_Addition" invocation-numbers="1 2"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.qa.IES_EachPages_Validation.IES_AddEnrollee -->
